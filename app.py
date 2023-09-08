@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect, url_for
 from DB_functions import *
-from DB_functions import con
 from FinalCodeFunctions import Create3DModel, TextureEdit, removefiles
 # from werkzeug import secure_filename
 # from FinalCodeFunctions import Create3DModel, TextureEdit
