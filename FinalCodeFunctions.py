@@ -140,7 +140,7 @@ def unet_model():
     return model
 
 
-K.tensorflow_backend.set_image_dim_ordering("th")
+K.set_image_data_format("channels_first")
 def TumourSegmentation(flair, t2):
     
     
