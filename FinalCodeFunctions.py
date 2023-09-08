@@ -25,7 +25,7 @@ import subprocess
     
 #https://www.codesofinterest.com/2016/11/keras-image-dim-ordering.html
 #(samples, channels, rows, cols)
-K.tensorflow_backend.set_image_dim_ordering("th")
+K.set_image_data_format("channels_first")
 img_size = 240      #original img size is 240*240
 smooth = 0.005 
 num_of_aug = 2
@@ -140,7 +140,7 @@ def unet_model():
     return model
 
 
-
+K.tensorflow_backend.set_image_dim_ordering("th")
 def TumourSegmentation(flair, t2):
     
     
